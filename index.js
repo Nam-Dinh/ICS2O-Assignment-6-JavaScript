@@ -6,10 +6,16 @@ function pizzaInput() {
     if ((size == "L") || (size == "l")){
       pizzaPrice = 6;
       outputString = outputString + "- Large: $6.00 \n"; 
-    } else {
+    } 
+    else if ((size == "J") || (size == "j")){
       pizzaPrice = 10;
       outputString = outputString + "- Jumbo: $10.00 \n"; 
     }
+    
+    else {
+        alert("You must pick a pizza size first!");
+    }
+    
 let totalTopPrice = 0;
   
 let pep = document.getElementById("pep").value;
